@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Hb0tponKHLy5exrBqzRYkU2ZZkd3tJWiThogEDuIMe8=",
+  "Source": "StratApiX.RestApi",
+  "BasePath": "_content/StratApiX.RestApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

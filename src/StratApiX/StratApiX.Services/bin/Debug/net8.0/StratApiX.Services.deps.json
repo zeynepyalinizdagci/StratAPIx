@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StratApiX.Services/1.0.0": {
+        "dependencies": {
+          "StratApiX.DataAccess": "1.0.0",
+          "StratApiX.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StratApiX.Services.dll": {}
+        }
+      },
+      "StratApiX.DataAccess/1.0.0": {
+        "runtime": {
+          "StratApiX.DataAccess.dll": {}
+        }
+      },
+      "StratApiX.Domain/1.0.0": {
+        "runtime": {
+          "StratApiX.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StratApiX.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StratApiX.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StratApiX.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

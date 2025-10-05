@@ -1,0 +1,12 @@
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\bin\Debug\net8.0\StratApiX.DataAccess.deps.json
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\bin\Debug\net8.0\StratApiX.DataAccess.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\bin\Debug\net8.0\StratApiX.DataAccess.pdb
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.AssemblyInfoInputs.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.AssemblyInfo.cs
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.sourcelink.json
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\refint\StratApiX.DataAccess.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\StratApiX.DataAccess.pdb
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.DataAccess\obj\Debug\net8.0\ref\StratApiX.DataAccess.dll

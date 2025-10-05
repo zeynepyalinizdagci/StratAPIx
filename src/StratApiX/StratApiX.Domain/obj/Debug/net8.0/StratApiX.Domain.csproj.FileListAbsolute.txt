@@ -1,0 +1,12 @@
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\bin\Debug\net8.0\StratApiX.Domain.deps.json
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\bin\Debug\net8.0\StratApiX.Domain.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\bin\Debug\net8.0\StratApiX.Domain.pdb
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.AssemblyInfoInputs.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.AssemblyInfo.cs
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.sourcelink.json
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\refint\StratApiX.Domain.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\StratApiX.Domain.pdb
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Domain\obj\Debug\net8.0\ref\StratApiX.Domain.dll

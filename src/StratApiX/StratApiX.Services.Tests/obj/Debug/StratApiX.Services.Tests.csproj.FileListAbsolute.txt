@@ -1,0 +1,15 @@
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\StratApiX.Services.Tests.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\StratApiX.Services.Tests.pdb
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\obj\Debug\StratApiX.Services.Tests.csproj.AssemblyReference.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\obj\Debug\StratApiX.Services.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\obj\Debug\StratApi.F1DA8AE2.Up2Date
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\obj\Debug\StratApiX.Services.Tests.dll
+C:\Projects\stratApiX\StratAPIx\src\StratApiX\StratApiX.Services.Tests\obj\Debug\StratApiX.Services.Tests.pdb

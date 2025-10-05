@@ -1,0 +1,6 @@
+@StratApiX.RestApi_HostAddress = http://localhost:5039
+
+GET {{StratApiX.RestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
