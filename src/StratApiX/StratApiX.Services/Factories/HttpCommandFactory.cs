@@ -6,12 +6,11 @@ namespace StratApiX.Services.Factories
 {
     internal class HttpCommandFactory : IHttpCommandFactory
     {
-        private readonly ConcurrentDictionary<MethodTypeName, IHttpCommand> _httpCommands = new();
-        public Task Register(MethodTypeName methodType, IHttpCommand command)
+        private readonly IReadOnlyDictionary<MethodTypeName, IHttpCommand> _httpCommands;
+        public HttpCommandFactory(IEnumerable<IHttpCommand> httpCommands)
         {
-            _httpCommands.TryAdd(methodType, command);
+            _httpCommands = httpCommands.ToDictionary(s => s.MethodTypeName, s => s);
 
-            return Task.CompletedTask;
         }
         public IHttpCommand Create(MethodTypeName methodType)
         {

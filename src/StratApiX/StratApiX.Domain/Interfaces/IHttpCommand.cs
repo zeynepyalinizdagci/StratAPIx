@@ -1,14 +1,11 @@
 ﻿using StratApiX.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using StratApiX.Domain.Enums;
 
 namespace StratApiX.Domain.Interfaces
 {
     public interface IHttpCommand
     {
-        Task Execute(TestCase testCase);
+        MethodTypeName MethodTypeName { get; }
+        Task<TestCaseResult> Execute(TestCase testCase, CancellationToken cancellationToken);
     }
 }

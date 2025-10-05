@@ -4,7 +4,7 @@ namespace StratApiX.Domain.Entities
 {
     public class AuthProfile
     {
-        public AuthType AuthType { get; set; }
+        public AuthType AuthType { get; set; } = AuthType.None;
         public UserInfo UserInfo { get; set; }
     }
 

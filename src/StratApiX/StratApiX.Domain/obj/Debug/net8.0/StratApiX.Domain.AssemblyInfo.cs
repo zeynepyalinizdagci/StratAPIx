@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StratApiX.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e40088249c35aa6d92b8013c408b213091e8797")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69aaa028cf9c0d7394f7d38b474dd301bada698c")]
 [assembly: System.Reflection.AssemblyProductAttribute("StratApiX.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StratApiX.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

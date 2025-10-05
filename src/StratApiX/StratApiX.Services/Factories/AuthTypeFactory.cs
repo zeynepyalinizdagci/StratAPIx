@@ -6,13 +6,12 @@ namespace StratApiX.Services.Factories
 {
     internal class AuthTypeFactory : IAuthTypeFactory
     {
-        private readonly ConcurrentDictionary<AuthType, IAuthStrategy> _authStrategies = new();
-        public Task Register(AuthType authType, IAuthStrategy strategy) {
-            _authStrategies.TryAdd(authType, strategy);
-
-            return Task.CompletedTask;
+        private readonly IReadOnlyDictionary<AuthType, IAuthStrategy> _authStrategies;
+        public AuthTypeFactory(IEnumerable<IAuthStrategy> strategies)
+        {
+            _authStrategies = strategies.ToDictionary(s => s.AuthType, s => s);
         }
-        public IAuthStrategy Create(AuthType authType) {
+        public IAuthStrategy GetStrategy(AuthType authType) {
             if (_authStrategies.TryGetValue(authType, out var selectedStragety)) { 
                 return selectedStragety;
             }

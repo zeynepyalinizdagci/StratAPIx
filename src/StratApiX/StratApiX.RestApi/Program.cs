@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpCommands();
 builder.Services.AddAuthTypeStrategies();
+builder.Services.AddServices();
 
 
 

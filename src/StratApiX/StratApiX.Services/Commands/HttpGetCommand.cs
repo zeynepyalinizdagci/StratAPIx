@@ -1,67 +1,46 @@
 ﻿using StratApiX.Domain.Entities;
+using StratApiX.Domain.Enums;
 using StratApiX.Domain.Interfaces;
+using System.Diagnostics;
 
 namespace StratApiX.Services.Commands
 {
     internal class HttpGetCommand : IHttpCommand
     {
         private readonly IAuthTypeFactory _authTypeFactory;
+        private readonly IHttpRequestBuilder _httpRequestBuilder;
+        public MethodTypeName MethodTypeName => MethodTypeName.Get;
 
-        public HttpGetCommand(IAuthTypeFactory authTypeFactory)
+        public HttpGetCommand(IAuthTypeFactory authTypeFactory, IHttpRequestBuilder httpRequestBuilder)
         {
-            _authTypeFactory = authTypeFactory;            
+            _authTypeFactory = authTypeFactory;
+            _httpRequestBuilder = httpRequestBuilder;
         }
-        public async Task Execute(TestCase testCase, CancellationToken cancellationToken)
+        public async Task<TestCaseResult> Execute(TestCase testCase, CancellationToken cancellationToken)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, testCase.Endpoint);
-            var authStragety = _authTypeFactory
-               .Create(testCase.AuthProfile.AuthType);
+            var request = _httpRequestBuilder.Build(testCase);
 
-            await authStragety.Apply(request, testCase.AuthProfile, cancellationToken);
+            var authStragety = _authTypeFactory.GetStrategy(testCase.AuthProfile?.AuthType ?? Domain.Enums.AuthType.None);
 
-            var client = authStragety.CreateClient();
+            await authStragety.Apply(request, testCase.AuthProfile ?? new AuthProfile(), cancellationToken);
 
+            using var client = authStragety.CreateClient();
+
+            var sw = Stopwatch.StartNew();
             var response = await client.SendAsync(request, cancellationToken);
+            sw.Stop();
 
-            var testCaseResponse = new TestCaseResponse
+            var body = await response.Content.ReadAsStringAsync(cancellationToken);
+
+            return new TestCaseResult
             {
+                DurationMs = sw.ElapsedMilliseconds,
+                ResponseBody = body,
+                StatusCode = response.StatusCode,
+                Success = response.IsSuccessStatusCode,
                 TestCaseId = testCase.Id,
-                TestSpecId = testCase.SpecId
+                TestCaseName = testCase.Name,
             };
-
-
-            if (response == null) {
-                testCaseResponse.Error = new[] { "Error : response is null" }; 
-            }
-            var responseStr = await response.Content.ReadAsStringAsync();
-
-            
-
-            return Task.CompletedTask;
-        }
-    }
-
-    internal class HttpPostCommand : IHttpCommand
-    {
-        public Task Execute(TestCase testCase)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    internal class HttpPutCommand : IHttpCommand
-    {
-        public Task Execute(TestCase testCase)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    internal class HttpDeleteCommand : IHttpCommand
-    {
-        public Task Execute(TestCase testCase)
-        {
-            throw new NotImplementedException();
         }
     }
 }
