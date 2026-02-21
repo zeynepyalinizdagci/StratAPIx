@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace StratApiX.Services.Commands
 {
-    internal class HttpGetCommand : IHttpCommand
+    public class HttpGetCommand : IHttpCommand
     {
         private readonly IAuthTypeFactory _authTypeFactory;
         private readonly IHttpRequestBuilder _httpRequestBuilder;

@@ -10,11 +10,21 @@ namespace StratApiX.Domain.Entities
         public string Url { get; set; } = string.Empty;
         public Dictionary<string, string>? Headers { get; set; }
         public string? RequestBodyJson { get; set; }
-        public int? ExpectedStatusCode { get; set; }
+        public IEnumerable<ExpectedResponse> ExpectedResponses { get; set; } = Enumerable.Empty<ExpectedResponse>();
         public AuthProfile? AuthProfile { get; set; } = new AuthProfile { AuthType = AuthType.None };
     }
 
-    public class TestCaseResult {
+    public class ExpectedResponse
+    {
+        public string? ExpectedRequestBody { get; set; }
+        public int? ExpectedStatusCode
+        {
+            get; set;
+        }
+    }
+
+    public class TestCaseResult
+    {
         public Guid TestCaseId { get; set; }
         public string TestCaseName { get; set; } = string.Empty;
         public System.Net.HttpStatusCode StatusCode { get; set; }
@@ -23,3 +33,4 @@ namespace StratApiX.Domain.Entities
         public long DurationMs { get; set; }
     }
 }
+
